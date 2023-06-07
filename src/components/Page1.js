@@ -8,7 +8,10 @@ const Page1 = () => {
   return (
     <div className="bg-yellow w-screen  ">
       <Header />
-      <Container />
+      <Container
+        title={"Watch your videos"}
+        description={"Get article-related YouTube videos with just a click!"}
+      />
       <Details />
       <Footer />
     </div>
