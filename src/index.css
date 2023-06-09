@@ -16,3 +16,101 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.word1,
+.word2,
+.word3 {
+  opacity: 0;
+  transform: translate(0px, 20px);
+}
+
+.word1 {
+  animation: word1 0.3s ease-in forwards;
+}
+
+.word2 {
+  animation: word2 0.3s ease-in 0.05s forwards;
+}
+
+.word3 {
+  animation: word3 0.3s ease-in 0.1s forwards;
+}
+
+@keyframes word1 {
+  from {
+    transform: translate(0px, 20px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes word2 {
+  from {
+    transform: translate(0px, 20px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes word3 {
+  from {
+    transform: translate(0px, 20px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+.description {
+  opacity: 0;
+  transform: translate(0px, 8px);
+  animation: description 0.3s ease-in 0.6s forwards;
+}
+
+@keyframes description {
+  from {
+    opacity: 0;
+    transform: translate(0px, 10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+.chrome-btn {
+  opacity: 0;
+  animation: chrome-btn 0.5s ease-in 1.2s forwards;
+}
+
+@keyframes chrome-btn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.video-player {
+  opacity: 0;
+  animation: video-play 0.5s ease-in 1.2s forwards;
+}
+
+@keyframes video-play {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

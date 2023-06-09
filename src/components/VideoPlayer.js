@@ -1,15 +1,16 @@
 import React from "react";
-import displayVideo from "../assets/final5.mp4";
+import displayVideo from "../assets/final8.mp4";
 
 const VideoPlayer = () => {
   return (
-    <div className="">
+    <div className="video-player">
       <video
-        style={{ borderRadius: "20px" }}
+        style={{
+          width: "896x",
+          height: "540px",
+        }}
         className="m-auto bg-yellow"
         src={displayVideo}
-        width="850"
-        height="300"
         autoPlay
         loop
         muted

@@ -9,7 +9,10 @@ const Page1 = () => {
     <div className="bg-yellow w-screen  ">
       <Header />
       <Container
-        title={"Watch your videos"}
+        word1={"Watch"}
+        word2={"your"}
+        word3={"videos"}
+        // title={"Watch your videos"}
         description={"Get article-related YouTube videos with just a click!"}
       />
       <Details />

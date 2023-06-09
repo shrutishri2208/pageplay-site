@@ -3,7 +3,7 @@ import DetailsCard from "./DetailsCard";
 
 const Details = () => {
   return (
-    <div className="flex bg-black justify-between px-28 gap-32 mt-4 mb-0 p-8">
+    <div className="flex bg-black justify-between px-28 gap-32 mb-0 p-8">
       <DetailsCard
         heading={"Personalized video recommendation"}
         description={"Analyses the contents of the page and suggests videos"}

@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        yellow: "#ffef02",
+        // yellow: "#ffef02",
+        yellow: "#fff500",
       },
       fontSize: {
         "7xl": "90px",
