@@ -4,15 +4,18 @@ import Container from "./Container";
 import Details from "./Details";
 import Footer from "./Footer";
 
-const Page2 = () => {
+const Page2 = ({ page }) => {
   return (
-    <div className="bg-black w-screen  ">
-      <Header />
+    <div className="bg-black shrink-0" style={{ width: "100vw" }}>
+      <Header page={page} />
       <Container
-        title={"Read your videos"}
+        page={page}
+        word1={"Read"}
+        word2={"your"}
+        word3={"videos"}
         description={"Get video related articles with just a click!"}
       />
-      <Details />
+      <Details page={page} />
       <Footer />
     </div>
   );
