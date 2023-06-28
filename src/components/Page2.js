@@ -3,10 +3,18 @@ import Header from "./Header";
 import Container from "./Container";
 import Details from "./Details";
 import Footer from "./Footer";
+import { useSelector } from "react-redux";
 
 const Page2 = ({ page }) => {
+  const activePage = useSelector((state) => state.activePage.activePage);
+
   return (
-    <div className="bg-black shrink-0" style={{ width: "100vw" }}>
+    <div
+      className={`bg-black shrink-0 ${
+        activePage === "page1" ? "no-translate-page" : "translate-page"
+      }`}
+      style={{ width: "100vw" }}
+    >
       <Header page={page} />
       <Container
         page={page}
@@ -16,7 +24,7 @@ const Page2 = ({ page }) => {
         description={"Get video related articles with just a click!"}
       />
       <Details page={page} />
-      <Footer />
+      <Footer page={page} />
     </div>
   );
 };

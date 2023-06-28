@@ -28,16 +28,18 @@ const Container = ({ page, word1, word2, word3, description }) => {
       >
         {description}
       </p>
-      <button
-        className={`chrome-btn absolute z-40 left-4 right-0 w-fit mx-auto mt-2 text-2xl px-8 py-2 border-6 rounded-xl hover:transition-all hover:duration-500 ${
-          page === "page1"
-            ? "text-yellow bg-black  border-black  hover:text-black hover:bg-yellow"
-            : "text-black bg-yellow  border-yellow  hover:text-yellow hover:bg-black"
-        }  `}
-      >
-        add to chrome
-      </button>
-      <VideoPlayer page={page} />
+      <div className="relative">
+        <button
+          className={`absolute z-40 w-fit left-0 right-0 chrome-btn mx-auto mt-2 text-3xl px-6 py-1.5 border-6 rounded-xl hover:transition-all hover:duration-500 ${
+            page === "page1"
+              ? "text-yellow bg-black  border-black  hover:text-black hover:bg-yellow"
+              : "text-black bg-yellow  border-yellow  hover:text-yellow hover:bg-black"
+          }  `}
+        >
+          {page === "page1" ? "add to chrome" : "coming soon"}
+        </button>
+        <VideoPlayer page={page} />
+      </div>
     </div>
   );
 };

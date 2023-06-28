@@ -4,7 +4,7 @@ import displayVideoBlack from "../assets/page2Video.mp4";
 
 const VideoPlayer = ({ page }) => {
   return (
-    <div className="video-player ">
+    <div className="video-player relative">
       <video
         style={{
           width: "896x",

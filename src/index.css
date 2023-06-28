@@ -10,6 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Righteous", cursive;
+  background-color: yellow;
 }
 
 code {
@@ -112,5 +113,84 @@ code {
   }
   to {
     opacity: 1;
+  }
+}
+
+.no-translate-page {
+  animation: translate-right 0.75s ease-out 0s forwards;
+}
+
+.translate-page {
+  animation: translate-left 0.75s ease-out 0s forwards;
+}
+
+@keyframes translate-left {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(-100vw, 0px);
+  }
+}
+
+@keyframes translate-right {
+  from {
+    transform: translate(-100vw, 0px);
+  }
+
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+
+.logo-image {
+  animation: logo-image-ani 0.5s ease-out 0s forwards;
+  transform: translateY(-50%);
+}
+
+@keyframes logo-image-ani {
+  0% {
+    width: 100px;
+    height: 0px;
+  }
+  10% {
+    height: 10px;
+    width: 100px;
+  }
+  20% {
+    height: 20px;
+    width: 100px;
+  }
+  30% {
+    height: 30px;
+    width: 100px;
+  }
+  40% {
+    height: 40px;
+    width: 100px;
+  }
+  50% {
+    height: 50px;
+    width: 100px;
+  }
+  60% {
+    height: 60px;
+    width: 100px;
+  }
+  70% {
+    height: 70px;
+    width: 100px;
+  }
+  80% {
+    height: 80px;
+    width: 100px;
+  }
+  90% {
+    height: 90px;
+    width: 100px;
+  }
+  100% {
+    height: 100px;
+    width: 100px;
   }
 }
