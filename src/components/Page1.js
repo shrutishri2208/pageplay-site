@@ -11,7 +11,12 @@ const Page1 = ({ page }) => {
   return (
     <div
       className={`bg-yellow shrink-0 ${
-        activePage === "page1" ? "no-translate-page" : "translate-page"
+        // activePage === "page1" ? "translate-right" : "translate-left"
+        activePage === "start"
+          ? "translate-start"
+          : activePage === "page1"
+          ? "translate-right"
+          : "translate-left"
       }`}
       style={{ width: "100vw" }}
     >

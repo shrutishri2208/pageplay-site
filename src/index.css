@@ -116,11 +116,20 @@ code {
   }
 }
 
-.no-translate-page {
+.translate-right {
   animation: translate-right 0.75s ease-out 0s forwards;
 }
+@keyframes translate-right {
+  from {
+    transform: translate(-100vw, 0px);
+  }
 
-.translate-page {
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+
+.translate-left {
   animation: translate-left 0.75s ease-out 0s forwards;
 }
 
@@ -133,17 +142,20 @@ code {
   }
 }
 
-@keyframes translate-right {
-  from {
-    transform: translate(-100vw, 0px);
-  }
+.translate-start {
+  animation: translate-start 0.75s ease-out 0s;
+}
 
+@keyframes translate-start {
+  from {
+    transform: translate(0px, 0px);
+  }
   to {
     transform: translate(0px, 0px);
   }
 }
 
-.logo-image {
+/* .logo-image {
   animation: logo-image-ani 0.5s ease-out 0s forwards;
   transform: translateY(-50%);
 }
@@ -193,4 +205,4 @@ code {
     height: 100px;
     width: 100px;
   }
-}
+} */

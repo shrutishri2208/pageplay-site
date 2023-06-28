@@ -5,10 +5,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { setActivePage } from "../redux/page/pageActions";
 
 const Header = ({ page }) => {
-  const activePage = useSelector((state) => state.activePage.activePage);
   const dispatch = useDispatch();
 
-  console.log("ACTIVE PAGE:", activePage);
   return (
     <div className="flex items-center justify-between">
       <h1
@@ -18,6 +16,7 @@ const Header = ({ page }) => {
       >
         page <br /> play
       </h1>
+
       {page === "page1" ? (
         <button
           className="scale-125"

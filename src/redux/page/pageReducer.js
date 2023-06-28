@@ -1,7 +1,7 @@
 import { ACTIONS } from "./pageTypes";
 
 const initialState = {
-  activePage: "page1",
+  activePage: "start",
 };
 
 const pageReducer = (state = initialState, action) => {
