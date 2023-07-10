@@ -36,7 +36,7 @@ const Container = ({ page, word1, word2, word3, description }) => {
               : "text-black bg-yellow  border-yellow  hover:text-yellow hover:bg-black"
           }  `}
         >
-          {page === "page1" ? "add to chrome" : "coming soon"}
+          {page === "page1" ? "add to chrome" : "register now"}
         </button>
         <VideoPlayer page={page} />
       </div>
