@@ -4,7 +4,7 @@ import VideoPlayer from "./VideoPlayer";
 const Container = ({ page, word1, word2, word3, description }) => {
   return (
     <div className="text-center ">
-      <div className="2xl:text-7xl/[1] xl:text-7xl/[1] lg:text-7xl/[1] md:text-6xl/[1] sm:text-5xl/[1] text-4xl font-bold flex justify-center items-center 2xl:gap-6 xl:gap-6 lg:gap-6 md:gap-5 sm:gap-4 gap-3">
+      <div className="2xl:text-7xl/[1] xl:text-7xl/[1] lg:text-7xl/[1] md:text-6xl/[1] sm:text-5xl/[1] text-4xl font-bold flex justify-center items-center 2xl:gap-6 xl:gap-6 lg:gap-6 md:gap-5 sm:gap-4 gap-3 relative z-40">
         <p
           className={`word1 ${page === "page1" ? "text-black" : "text-yellow"}`}
         >
@@ -22,7 +22,7 @@ const Container = ({ page, word1, word2, word3, description }) => {
         </p>
       </div>
       <p
-        className={`2xl:text-3xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-2xl text-lg 2xl:my-4 xl:my-4 lg:my-4 md:my-4 sm:my-4 description ${
+        className={`2xl:text-3xl xl:text-3xl lg:text-2xl md:text-2xl sm:text-2xl text-lg 2xl:my-4 xl:my-4 lg:my-4 md:my-4 sm:my-4 description relative z-40 ${
           page === "page1" ? "text-black" : "text-yellow"
         } `}
       >

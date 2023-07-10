@@ -4,7 +4,7 @@ import DetailsCard from "./DetailsCard";
 const Details = ({ page }) => {
   return (
     <div
-      className={`px-28 p-8 grid grid-cols-1 gap-8 md:grid-cols-3 md:px-8 ${
+      className={`px-28 p-8 grid grid-cols-1 gap-8 md:grid-cols-3 md:px-8 relative 2xl:top-24 xl:top-24 lg:top-24 md:top-20 sm:top-4 -top-16 ${
         page === "page1" ? "bg-black" : "bg-yellow"
       }`}
     >

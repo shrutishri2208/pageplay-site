@@ -1,10 +1,10 @@
 import React from "react";
-import displayVideo from "../assets/page1Video.mp4";
-import displayVideoBlack from "../assets/page2Video.mp4";
+import displayVideo from "../assets/page1video-2.mp4";
+import displayVideoBlack from "../assets/page2video-2.mp4";
 
 const VideoPlayer = ({ page }) => {
   return (
-    <div className="video-player relative">
+    <div className="video-player relative 2xl:top-20 xl:top-16 lg:top-20 md:top-16 sm:top-12 -top-12">
       <video
         style={{
           width: "896x",
