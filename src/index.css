@@ -10,7 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Righteous", cursive;
-  background-color: yellow;
+  background-color: black;
 }
 
 code {
@@ -116,6 +116,18 @@ code {
   }
 }
 
+.video {
+  width: 896px;
+  height: 504px;
+}
+
+@media screen and (max-width: 768px) {
+  .video {
+    width: 640px;
+    height: 360px;
+  }
+}
+
 .translate-right {
   animation: translate-right 0.75s ease-out 0s forwards;
 }
@@ -153,4 +165,16 @@ code {
   to {
     transform: translate(0px, 0px);
   }
+}
+
+.detail-card:hover {
+  display: none;
+}
+
+.detail-card + p {
+  display: none;
+}
+
+.detail-card:hover + p {
+  display: block;
 }

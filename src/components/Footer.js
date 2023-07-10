@@ -5,7 +5,7 @@ import EmailIcon from "@mui/icons-material/Email";
 
 const Footer = ({ page }) => {
   return (
-    <div className="m-8 mb-8 text-center relative 2xl:top-24 xl:top-24 lg:top-24 md:top-20 sm:top-4 -top-16">
+    <div className="m-8 mb-8 text-center 2xl:top-24 xl:top-24 lg:top-24 md:top-20 sm:top-4 -top-16">
       <p className={`${page === "page1" ? "text-black" : "text-yellow"}`}>
         made by Shruti Shrivastava
       </p>

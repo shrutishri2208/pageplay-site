@@ -31,7 +31,6 @@ const Header = ({ page }) => {
             <p className=" text-xs text-black leading-3 bg-white border-2 border-black rounded-md p-0.5">
               coming soon!
             </p>
-            {/* <LocalOfferIcon className="text-red-600 z-40 relative right-2" /> */}
           </div>
         </button>
       ) : (

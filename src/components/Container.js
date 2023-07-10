@@ -4,7 +4,7 @@ import VideoPlayer from "./VideoPlayer";
 const Container = ({ page, word1, word2, word3, description }) => {
   return (
     <div className="text-center ">
-      <div className="2xl:text-7xl/[1] xl:text-7xl/[1] lg:text-7xl/[1] md:text-6xl/[1] sm:text-5xl/[1] text-4xl font-bold flex justify-center items-center 2xl:gap-6 xl:gap-6 lg:gap-6 md:gap-5 sm:gap-4 gap-3 relative z-40">
+      <div className="2xl:text-7xl/[1] xl:text-7xl/[1] lg:text-7xl/[1] md:text-6xl/[1] sm:text-5xl/[1] text-4xl font-bold flex justify-center items-center 2xl:gap-6 xl:gap-6 lg:gap-6 md:gap-5 sm:gap-4 gap-3 z-40">
         <p
           className={`word1 ${page === "page1" ? "text-black" : "text-yellow"}`}
         >
@@ -28,9 +28,9 @@ const Container = ({ page, word1, word2, word3, description }) => {
       >
         {description}
       </p>
-      <div className="relative">
+      <div className="">
         <button
-          className={`absolute z-40 w-fit left-0 right-0 chrome-btn mx-auto mt-2 text-3xl px-6 py-1.5 border-6 rounded-xl hover:transition-all hover:duration-500 ${
+          className={`z-40 w-fit chrome-btn mx-auto mt-2 text-3xl px-6 py-1.5 border-6 rounded-xl hover:transition-all hover:duration-500 ${
             page === "page1"
               ? "text-yellow bg-black  border-black  hover:text-black hover:bg-yellow"
               : "text-black bg-yellow  border-yellow  hover:text-yellow hover:bg-black"
