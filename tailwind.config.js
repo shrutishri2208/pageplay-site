@@ -8,7 +8,10 @@ module.exports = {
         yellow: "#fff500",
       },
       fontSize: {
-        "7xl": "90px",
+        "4xl": "3.2rem",
+        "5xl": "4.2rem",
+        "6xl": "5rem",
+        "7xl": "5.5rem",
       },
       borderWidth: {
         3: "3px",
