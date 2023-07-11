@@ -166,15 +166,3 @@ code {
     transform: translate(0px, 0px);
   }
 }
-
-.detail-card:hover {
-  display: none;
-}
-
-.detail-card + p {
-  display: none;
-}
-
-.detail-card:hover + p {
-  display: block;
-}

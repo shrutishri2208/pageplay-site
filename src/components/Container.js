@@ -32,8 +32,8 @@ const Container = ({ page, word1, word2, word3, description }) => {
         <button
           className={`z-40 w-fit chrome-btn mx-auto mt-2 text-3xl px-6 py-1.5 border-6 rounded-xl hover:transition-all hover:duration-500 ${
             page === "page1"
-              ? "text-yellow bg-black  border-black  hover:text-black hover:bg-yellow"
-              : "text-black bg-yellow  border-yellow  hover:text-yellow hover:bg-black"
+              ? "text-yellow bg-black  border-black  hover:text-black hover:bg-white"
+              : "text-black bg-yellow  border-yellow  hover:text-white hover:bg-black"
           }  `}
         >
           {page === "page1" ? "add to chrome" : "register now"}

@@ -12,9 +12,9 @@ const Footer = ({ page }) => {
       <div className="flex gap-8 my-2 justify-center">
         <a href="https://github.com/shrutishri2208" target="_blank">
           <GitHubIcon
-            className={`scale-150 rounded-full p-0.5  border-3 hover:bg-transparent cursor-pointer hover:transition-all hover:duration-500 ${
+            className={`scale-150 rounded-full p-0.5  border-3 cursor-pointer hover:transition-all hover:duration-500 ${
               page === "page1"
-                ? "border-black bg-black text-yellow hover:text-black"
+                ? "border-black bg-black text-yellow hover:text-black hover:bg-white "
                 : "border-yellow bg-yellow text-black hover:text-yellow"
             } `}
           />
@@ -24,9 +24,9 @@ const Footer = ({ page }) => {
           target="_blank"
         >
           <LinkedInIcon
-            className={`scale-150 rounded-full p-0.5  border-3 hover:bg-transparent cursor-pointer hover:transition-all hover:duration-500 ${
+            className={`scale-150 rounded-full p-0.5  border-3  cursor-pointer hover:transition-all hover:duration-500 ${
               page === "page1"
-                ? "border-black bg-black text-yellow hover:text-black"
+                ? "border-black bg-black text-yellow hover:text-black hover:bg-white "
                 : "border-yellow bg-yellow text-black hover:text-yellow"
             } `}
           />
@@ -36,9 +36,9 @@ const Footer = ({ page }) => {
           target="_blank"
         >
           <EmailIcon
-            className={`scale-150 rounded-full p-0.5  border-3 hover:bg-transparent cursor-pointer hover:transition-all hover:duration-500 ${
+            className={`scale-150 rounded-full p-0.5  border-3  cursor-pointer hover:transition-all hover:duration-500 ${
               page === "page1"
-                ? "border-black bg-black text-yellow hover:text-black"
+                ? "border-black bg-black text-yellow hover:text-black hover:bg-white "
                 : "border-yellow bg-yellow text-black hover:text-yellow"
             } `}
           />
