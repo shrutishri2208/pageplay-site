@@ -10,7 +10,7 @@ import thirdY from "../assets/third-2.png";
 const Details = ({ page }) => {
   return (
     <div
-      className={`px-28 p-8 grid grid-cols-1 gap-8 md:grid-cols-3 md:px-8  ${
+      className={`mt-8 p-8 grid grid-cols-1 gap-8 lg:grid-cols-3 md:px-8  ${
         page === "page1" ? "" : ""
       }`}
     >
@@ -29,9 +29,7 @@ const Details = ({ page }) => {
       <DetailsCard
         page={page}
         heading={"Easy to install and use"}
-        description={
-          "Light-weight chrome extension that can be installed in seconds"
-        }
+        description={"Light-weight chrome extension, installed in seconds"}
         image={secondB}
         // image={page === "page2" ? secondB : secondB}
       />

@@ -129,7 +129,7 @@ code {
 }
 
 .translate-right {
-  animation: translate-right 0.75s ease-out 0s forwards;
+  animation: translate-right 0.4s ease-out 0s forwards;
 }
 @keyframes translate-right {
   from {
@@ -142,7 +142,7 @@ code {
 }
 
 .translate-left {
-  animation: translate-left 0.75s ease-out 0s forwards;
+  animation: translate-left 0.4s ease-out 0s forwards;
 }
 
 @keyframes translate-left {
@@ -155,7 +155,7 @@ code {
 }
 
 .translate-start {
-  animation: translate-start 0.75s ease-out 0s;
+  animation: translate-start 0.4s ease-out 0s;
 }
 
 @keyframes translate-start {
@@ -164,5 +164,64 @@ code {
   }
   to {
     transform: translate(0px, 0px);
+  }
+}
+
+.detail-card h4 {
+}
+
+.detail-card:hover p {
+  /* animation: translate-up-2 0.2s ease-in 0s forwards; */
+}
+
+.detail-card:hover h4 {
+  /* animation: translate-up 0.2s ease-in 0s forwards; */
+}
+
+.detail-card:not(:hover) h4 {
+  /* animation: translate-down 0.2s ease-in 0s forwards; */
+}
+.detail-card:not(:hover) p {
+  /* animation: translate-down-2 0.2s ease-in 0s forwards; */
+}
+
+@keyframes translate-up {
+  from {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0px, -30px);
+    opacity: 0;
+  }
+}
+@keyframes translate-up-2 {
+  from {
+    transform: translate(0px, 30px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+@keyframes translate-down {
+  to {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  from {
+    transform: translate(0px, -30px);
+    opacity: 0;
+  }
+}
+@keyframes translate-down-2 {
+  to {
+    transform: translate(0px, 30px);
+    opacity: 0;
+  }
+  from {
+    transform: translate(0px, 0px);
+    opacity: 1;
   }
 }

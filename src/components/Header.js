@@ -9,9 +9,9 @@ const Header = ({ page }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between  mb-8">
       <h1
-        className={`text-3xl leading-6 m-8 ${
+        className={`sm:text-3xl text-2xl sm:leading-6 leading-5 m-8 ${
           page === "page1" ? "text-black" : "text-yellow"
         } `}
       >
@@ -23,7 +23,7 @@ const Header = ({ page }) => {
           className="scale-125"
           onClick={() => dispatch(setActivePage("page2"))}
         >
-          <div className="mr-14">
+          <div className="sm:mr-14 mr-8 mt-4">
             <PlayArrowIcon
               style={{ padding: "0.15rem" }}
               className={`p-0.5 z-0 scale-150  text-yellow bg-black rounded-full border-3 border-black hover:bg-yellow hover:text-black hover:transition-all hover:duration-500`}
