@@ -4,6 +4,7 @@ import Container from "./Container";
 import Details from "./Details";
 import Footer from "./Footer";
 import { useSelector } from "react-redux";
+import Registration from "./Registration";
 
 const Page2 = ({ page }) => {
   const activePage = useSelector((state) => state.activePage.activePage);
@@ -29,6 +30,7 @@ const Page2 = ({ page }) => {
       />
       <Details page={page} />
       <Footer page={page} />
+      <Registration />
     </div>
   );
 };
