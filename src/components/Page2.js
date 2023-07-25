@@ -30,7 +30,7 @@ const Page2 = ({ page }) => {
       />
       <Details page={page} />
       <Footer page={page} />
-      <Registration />
+      {/* <Registration /> */}
     </div>
   );
 };

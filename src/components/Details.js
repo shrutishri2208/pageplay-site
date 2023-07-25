@@ -16,8 +16,16 @@ const Details = ({ page }) => {
     >
       <DetailsCard
         page={page}
-        heading={"Personalized video recommendation"}
-        description={"Analyses the contents of the page and suggests videos"}
+        heading={
+          page === "page1"
+            ? "Personalized video recommendation"
+            : "Personalized article recommendation"
+        }
+        description={
+          page === "page1"
+            ? "Analyses the contents of the page and suggests videos"
+            : "Analyses the video and suggests articles"
+        }
         image={firstB}
         // image={page === "page2" ? firstY : firstB}
       />
@@ -40,9 +48,15 @@ const Details = ({ page }) => {
       /> */}
       <DetailsCard
         page={page}
-        heading={"Direct link to videos and channels"}
+        heading={
+          page === "page1"
+            ? "Direct link to videos and channels"
+            : "Direct link to articles and webpages"
+        }
         description={
-          "Simply click on the video or the channel to view the video"
+          page === "page1"
+            ? "Simply click on the video or the channel to view the video"
+            : "Simply click on the webpage link to view the article"
         }
         image={thirdB}
         // image={page === "page2" ? thirdY : thirdB}
