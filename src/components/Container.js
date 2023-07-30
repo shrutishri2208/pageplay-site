@@ -6,19 +6,25 @@ const Container = ({ page, word1, word2, word3, description }) => {
 
   return (
     <div className="text-center ">
-      <div className="2xl:text-7xl/[1] xl:text-7xl/[1] lg:text-7xl/[1] md:text-6xl/[1] sm:text-5xl/[1] text-heading font-bold flex justify-center items-center 2xl:gap-6 xl:gap-6 lg:gap-6 md:gap-5 sm:gap-4 gap-3 z-40">
+      <div className="2xl:text-7xl/[1] xl:text-7xl/[1] lg:text-7xl/[1] md:text-6xl/[1] sm:text-5xl/[1] text-heading font-bold flex justify-center items-center 2xl:gap-6 xl:gap-6 lg:gap-6 md:gap-5 sm:gap-4 gap-3 z-40 ">
         <p
-          className={`word1 ${page === "page1" ? "text-black" : "text-yellow"}`}
+          className={` ${
+            page === "page1" ? "text-black word11" : "text-yellow word21"
+          }`}
         >
           {word1}
         </p>
         <p
-          className={`word2 ${page === "page1" ? "text-black" : "text-yellow"}`}
+          className={` ${
+            page === "page1" ? "text-black word12" : "text-yellow word22"
+          }`}
         >
           {word2}{" "}
         </p>
         <p
-          className={`word3 ${page === "page1" ? "text-black" : "text-yellow"}`}
+          className={` ${
+            page === "page1" ? "text-black word13" : "text-yellow word23"
+          }`}
         >
           {word3}
         </p>

@@ -11,8 +11,8 @@ const Header = ({ page }) => {
   return (
     <div className="flex items-center justify-between  mb-8">
       <h1
-        className={`sm:text-3xl text-2xl sm:leading-6 leading-5 m-8 font-bold ${
-          page === "page1" ? "text-black" : "text-yellow"
+        className={` sm:text-3xl text-2xl sm:leading-6 leading-5 m-8 font-bold ${
+          page === "page1" ? "text-black logo1" : "text-yellow logo2"
         } `}
       >
         page <br /> play
