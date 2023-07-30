@@ -38,23 +38,24 @@ const Container = ({ page, word1, word2, word3, description }) => {
       </p>
       <div className="">
         <button
-          onClick={() => {
-            setIsClicked(true);
-            setTimeout(() => {
-              setIsClicked(false);
-            }, 3000);
-          }}
+          onClick={() => {}}
           className={`z-40 w-fit chrome-btn mx-auto mt-2 text-3xl px-6 py-1.5 border-6 rounded-xl hover:transition-all hover:duration-500 ${
             page === "page1"
               ? "text-yellow bg-black  border-black  hover:text-black hover:bg-white"
               : "text-black bg-yellow  border-yellow  hover:text-white hover:bg-black"
           }  `}
         >
-          {page === "page1"
+          <a
+            href="https://chrome.google.com/webstore/detail/pageplay/jjahbdjicejlbmbcaecooaphbbllmfdp/"
+            target="_black"
+          >
+            add to chrome
+          </a>
+          {/* {page === "page1"
             ? isClicked === true
               ? "under review!"
               : "add to chrome"
-            : "coming soon"}
+            : "coming soon"} */}
         </button>
         <VideoPlayer page={page} />
       </div>
