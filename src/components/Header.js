@@ -15,7 +15,7 @@ const Header = ({ page }) => {
           page === "page1" ? "text-black logo1" : "text-yellow logo2"
         } `}
       >
-        page <br /> play
+        text <br /> play
       </h1>
 
       {page === "page1" ? (

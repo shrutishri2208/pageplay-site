@@ -1,6 +1,6 @@
 import React from "react";
-import displayVideo from "../assets/page1video-2.mp4";
-import displayVideoBlack from "../assets/page2video-2.mp4";
+import displayVideo from "../assets/page1.mp4";
+import displayVideoBlack from "../assets/page2.mp4";
 
 const VideoPlayer = ({ page }) => {
   return (

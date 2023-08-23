@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import VideoPlayer from "./VideoPlayer";
+import trial from "../assets/trial.jpg";
 
 const Container = ({ page, word1, word2, word3, description }) => {
   const [isClicked, setIsClicked] = useState(false);
@@ -46,18 +47,29 @@ const Container = ({ page, word1, word2, word3, description }) => {
           }  `}
         >
           <a
-            href="https://chrome.google.com/webstore/detail/pageplay/jjahbdjicejlbmbcaecooaphbbllmfdp/"
+            href="https://chrome.google.com/webstore/detail/textplay/jjahbdjicejlbmbcaecooaphbbllmfdp"
             target="_black"
           >
-            add to chrome
+            {page === "page1" ? "add to chrome" : "coming soon"}
           </a>
-          {/* {page === "page1"
-            ? isClicked === true
-              ? "under review!"
-              : "add to chrome"
-            : "coming soon"} */}
         </button>
         <VideoPlayer page={page} />
+        {/* <div className="relative w-max m-auto">
+          <img
+            src={trial}
+            className="m-auto image-trial"
+            style={{ height: "300px", width: "400px" }}
+          />
+          <div
+            className=" h-full absolute top-0 mx-auto div-trial"
+            style={{
+              width: "400px",
+            }}
+          ></div>
+          <h3 className="text-xl z-10 relative bottom-12 text-white">
+            HJBSHSBVHEYBCYIBCJKNCOUEBCOBECU
+          </h3>
+        </div> */}
       </div>
     </div>
   );

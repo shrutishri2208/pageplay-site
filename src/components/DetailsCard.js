@@ -1,4 +1,5 @@
 import React from "react";
+import trial from "../assets/trial.jpg";
 
 const DetailsCard = ({ heading, description, page, image }) => {
   return (
@@ -10,9 +11,9 @@ const DetailsCard = ({ heading, description, page, image }) => {
       }`}
     >
       {/* <img
-        src={image}
+        src={trial}
         className="m-auto"
-        style={{ height: "50px", width: "50px" }}
+        style={{ height: "50px", width: "400px" }}
       /> */}
 
       <h4
